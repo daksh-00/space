@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Travel History</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      color: #e0e0e0;
+      line-height: 1.6;
+      background: url('The_Earth_seen_from_Apollo_17.jpg') center/cover fixed no-repeat;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(5, 5, 15, 0.7);
+      z-index: -1;
+    }
+
+    header {
+      background: rgba(0, 0, 40, 0.8);
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #9fc3ff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+    .banner {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .banner h2 {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-size: 22px;
+    }
+
+    section {
+      padding: 50px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #81aaff;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    .cardbox {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px rgba(130, 170, 255, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #cfcfcf;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    caption {
+      caption-side: top;
+      color: #9fc3ff;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #1a1a3a;
+      color: #fff;
+    }
+
+    td {
+      background: rgba(15, 15, 37, 0.8);
+      color: #bcbcbc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#missions">Missions</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>"From Sputnik to the Stars — Humanity’s Journey Beyond Earth"</h2>
+  </section>
+
+  <section id="timeline">
+    <h2>Timeline of Space Exploration</h2>
+    <div class="cardbox">
+      <div class="card">
+        <img src="514079610_dhhajr.webp" alt="Sputnik 1">
+        <h3>1957 – Sputnik 1</h3>
+        <p>The first artificial satellite launched by the Soviet Union, marking the start of the Space Age.</p>
+      </div>
+      <div class="card">
+        <img src="apollo_11_flag_480x480.webp" alt="Apollo 11">
+        <h3>1969 – Apollo 11</h3>
+        <p>Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon.</p>
+      </div>
+      <div class="card">
+        <img src="International Space Station Diagram .webp" alt="ISS">
+        <h3>1998 – International Space Station</h3>
+        <p>The ISS became a global hub for long-term space research.</p>
+      </div>
+      <div class="card">
+        <img src="SpaceX Dragon Launch.webp" alt="SpaceX Dragon">
+        <h3>2012 – SpaceX Dragon</h3>
+        <p>SpaceX became the first private company to send a spacecraft to the ISS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="missions">
+    <h2>Major Space Missions</h2>
+    <table>
+      <caption>Important Missions Overview</caption>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Mission</th>
+          <th>Country</th>
+          <th>Achievement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1957</td>
+          <td>Sputnik 1</td>
+          <td>USSR</td>
+          <td>First Artificial Satellite</td>
+        </tr>
+        <tr>
+          <td>1961</td>
+          <td>Vostok 1</td>
+          <td>USSR</td>
+          <td>First Human in Space</td>
+        </tr>
+        <tr>
+          <td>1969</td>
+          <td>Apollo 11</td>
+          <td>USA</td>
+          <td>First Moon Landing</td>
+        </tr>
+        <tr>
+          <td>1998</td>
+          <td>ISS</td>
+          <td>International</td>
+          <td>Space Research Station</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Artemis Program</td>
+          <td>USA</td>
+          <td>Return to the Moon (Ongoing)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="cardbox">
+      <div class="card">
+        <img src="lunarmodule.webp" alt="Lunar Module">
+        <p>The Apollo Lunar Module used in moon landings.</p>
+      </div>
+      <div class="card">
+        <img src="hubble-1024x683.webp" alt="Hubble Telescope">
+        <p>The Hubble Telescope expanded our view of the universe.</p>
+      </div>
+      <div class="card">
+        <img src="ZW5sYRKFkqfyqu4LL4DLJH.webp" alt="James Webb Telescope">
+        <p>The James Webb Telescope revealed early galaxies with stunning clarity.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
